@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>TheSaaS — Responsive Bootstrap SaaS, Software & WebApp Template</title>
+    <title>Zecwallet Lite - Fully featured Zcash wallet</title>
 
     <!-- Styles -->
     <link href="assets/css/page.min.css" rel="stylesheet">
@@ -60,8 +60,8 @@
     <!-- Header -->
     <header class="header text-white pt-12 pb-10" style="background-image: linear-gradient(-45deg, #667eea 0%, #764ba2 100%);">
       <div class="container">
-        <h1 class="display-4">Zecwallet</h1>
-        <p class="lead-1 mt-6">Zecwallet is a fully featured shielded wallet for Zcash.</p>
+        <h1 class="display-4">Zecwallet Lite</h1>
+        <p class="lead-1 mt-6">Zecwallet Lite is a fully featured shielded wallet for Zcash.</p>
         <p class="lead-2 mt-6">Get started in under a minute. No blockchain download needed!</p>
         <p class="lead-2 mt-6">&nbsp;</p>
         <a class="btn btn-lg btn-round btn-light" href="#">Take a test drive</a>
@@ -93,26 +93,26 @@
               <ul class="nav nav-tabs-shadow nav-tabs-border">
                 <li class="nav-item">
                   <a class="nav-link active" data-toggle="tab" href="#tab-1">
-                    <h6>Solid color</h6>
-                    <p class="small mb-0">Use only one color on your header and display some text on it.</p>
+                    <h6>Shileded and Transparent addresses</h6>
+                    <p class="small mb-0">Full support for incoming and outgoing, z-addresses and t-addresses.</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" data-toggle="tab" href="#tab-2">
-                    <h6>Gradient color</h6>
-                    <p class="small mb-0">You can create a gradient background with two or more colors.</p>
+                    <h6>Full Memo support</h6>
+                    <p class="small mb-0">Full support for incoming and outgoing memos</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" data-toggle="tab" href="#tab-3">
-                    <h6>Image</h6>
-                    <p class="small mb-0">Display an image as a background image with an optional overlay.</p>
+                    <h6>HD Wallet</h6>
+                    <p class="small mb-0">A single seed phrase derives all z-addresses and t-address.</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" data-toggle="tab" href="#tab-4">
-                    <h6>Particle</h6>
-                    <p class="small mb-0">Display hundreds of dots moving in your header with less attention.</p>
+                    <h6>Full Wallet Recovery</h6>
+                    <p class="small mb-0">Recover the entire wallet, including incoming, outgoing transactions and memos using just the seed phrase.</p>
                   </a>
                 </li>
               </ul>
@@ -123,11 +123,11 @@
               <div class="tab-content text-center">
 
                 <div class="tab-pane fade show active" id="tab-1">
-                  <img class="shadow-3" src="../assets/img/preview/header-color.jpg" alt="...">
+                  <img class="shadow-3" src="assets/img/addresses.jpeg" alt="...">
                 </div>
 
                 <div class="tab-pane fade" id="tab-2">
-                  <img class="shadow-3" src="../assets/img/preview/header-gradient.jpg" alt="...">
+                  <img class="shadow-3" src="assets/img/memos.jpeg" alt="...">
                 </div>
 
                 <div class="tab-pane fade" id="tab-3">
@@ -196,33 +196,41 @@
 
             <div class="col-md-6">
               <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="#">
-                <p><i class="fa fa-comments lead-7 text-primary"></i></p>
-                <h5 class="fw-500 my-4">Zecwallet Fullnode</h5>
-                <p class="mb-0">Now for manners use has company believe parlors. Least nor party who wrote while did. Excuse formed as is agreed admire so on result parish. Put use set uncommonly announcing and traveling.</p>
+                <div style="display: block">
+                  <p style="float: left; padding-right: 20px;"><i class="fa icon-desktop lead-7 text-primary"></i></p>
+                  <h5 class="fw-500 my-4">Zecwallet Fullnode</h5>
+                </div>
+                <p class="mb-0">Zecwallet UI that runs against your local Zcash full node. Can run over Tor for additional privacy. Comes with an embedded Zcashd full node.<br/>&nbsp;</p>
               </a>
             </div>
 
             <div class="col-md-6">
               <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="#">
-                <p><i class="fa fa-cubes lead-7 text-warning"></i></p>
-                <h5 class="fw-500 my-4">Paper Wallet</h5>
-                <p class="mb-0">Now for manners use has company believe parlors. Least nor party who wrote while did. Excuse formed as is agreed admire so on result parish. Put use set uncommonly announcing and traveling.</p>
+                <div style="display: block">
+                  <p style="float: left; padding-right: 20px;"><i class="fa icon-notebook lead-7 text-warning"></i></p>
+                  <h5 class="fw-500 my-4">Paper Wallet</h5>
+                </div>
+                <p class="mb-0">Offline capable Sapling and Transparent address and private key generator. Runs on desktops, chromebooks, Raspbery Pi and more devices.</p>
               </a>
             </div>
 
             <div class="col-md-6">
               <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="#">
-                <p><i class="fa fa-book lead-7 text-info"></i></p>
-                <h5 class="fw-500 my-4">Command Line Lightwallet</h5>
-                <p class="mb-0">Now for manners use has company believe parlors. Least nor party who wrote while did. Excuse formed as is agreed admire so on result parish. Put use set uncommonly announcing and traveling.</p>
+                <div style="display: block">
+                  <p style="float: left; padding-right: 20px;"><i class="fa icon-edit lead-7 text-info"></i></p>
+                  <h5 class="fw-500 my-4">Command Line Lightwallet</h5>
+                </div>
+                <p class="mb-0">Command line light client for Zcash that can run on a variety of platforms. Fully scriptable.<br/>&nbsp;</p>
               </a>
             </div>
 
             <div class="col-md-6">
               <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="#">
-                <p><i class="fa fa-video-camera lead-7 text-danger"></i></p>
-                <h5 class="fw-500 my-4">Companion App for Android</h5>
-                <p class="mb-0">Now for manners use has company believe parlors. Least nor party who wrote while did. Excuse formed as is agreed admire so on result parish. Put use set uncommonly announcing and traveling.</p>
+                <div style="display: block">
+                    <p style="float: left; padding-right: 20px;"><i class="fa icon-phone lead-7 text-danger"></i></p>
+                  <h5 class="fw-500 my-4">Companion App for Android</h5>
+                </div>
+                <p class="mb-0">Connect to your Zecwallet Lite or Fullnode from your Android phone, and securely send shielded and transparent transactions from your phone.</p>
               </a>
             </div>
 
