@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>Zecwallet Lite - Fully featured Zcash wallet</title>
+    <title>Zecwallet FullNode - Zcash FullNode UI Wallet</title>
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,7 +17,7 @@
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="icon" href="assets/img/favicon-fullnode.png">
 
     <!--  Open Graph Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -27,14 +27,14 @@
 
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
       <div class="container">
 
         <div class="navbar-left">
           <button class="navbar-toggler" type="button">&#9776;</button>
           <a class="navbar-brand" href="index.html">
-            <img class="logo-dark" src="assets/img/favicon.png" alt="logo">
-            <img class="logo-light" src="assets/img/favicon.png" alt="logo">
+            <img class="logo-dark" src="assets/img/favicon-fullnode.png" alt="logo">
+            <img class="logo-light" src="assets/img/favicon-fullnode.png" alt="logo">
           </a>
         </div>
 
@@ -53,27 +53,28 @@
       </div>
     </nav><!-- /.navbar -->
 
+
     <!--
     |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-    | Block 16 cover
+    | Block 8 Cover
     |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
     !-->
     <!-- Header -->
-    <header class="header">
+    <header class="header text-white text-center text-lg-left" style="background-image: linear-gradient(135deg, #1b6bf9 0%, #764ba2 100%);">
       <div class="container">
         <div class="row align-items-center h-100">
 
-          <div class="col-md-4 mr-auto">
-            <h1 class="fw-600">Zecwallet Lite</h1>
-            <br>
-            <p class="lead-3">Zecwallet Lite is a fully featured shielded wallet for Zcash.</p>
-            <p class="lead-1">Syncs in under a minute. No blockchain download needed!</p>
-            <br>
-            <a class="btn btn-xl btn-round btn-info" href="#download">Download</a>
+          <div class="col-lg-5">
+            <h1 class="display-4"><strong>Zecwallet FullNode</strong></h1>
+            <p class="lead mt-5">Zecwallet FullNode is a UI frontend wallet for the zcashd full node. Embedded full node included!</p>
+            <hr class="w-10 ml-0 my-7">
+            <p class="gap-xy">
+              <a class="btn btn-round btn-warning px-6" href="#downloads">Download</a>
+            </p>
           </div>
 
-          <div class="col-md-7">
-            <img src="assets/img/cover.jpeg" alt="...">
+          <div class="col-lg-6 ml-auto">
+              <img src="assets/img/fullnode-cover.png" alt="...">
           </div>
 
         </div>
@@ -81,82 +82,102 @@
     </header><!-- /.header -->
 
 
+
     <!-- Main Content -->
     <main class="main-content">
 
       <!--
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      | Block 12
+      | Block 1 Features
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <section class="section bg-gray">
-        <div class="container">
-          <header class="section-header">
-            <h2>Private By Default</h2>
-            <p class="lead">Send fully private, fully shielded transactions with ease!</p>
-          </header>
-
-          <div class="row gap-y">
-
-
-            <div class="col-md-4">
-              <ul class="nav nav-tabs-shadow nav-tabs-border">
-                <li class="nav-item">
-                  <a class="nav-link active" data-toggle="tab" href="#tab-1">
-                    <h6>Shileded and Transparent addresses</h6>
-                    <p class="small mb-0">Full support for incoming and outgoing, z-addresses and t-addresses.</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#tab-2">
-                    <h6>Full Memo support</h6>
-                    <p class="small mb-0">Full support for incoming and outgoing memos</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#tab-3">
-                    <h6>HD Wallet</h6>
-                    <p class="small mb-0">A single seed phrase derives all z-addresses and t-address. Fully recover the entire wallet with just the seed.</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#tab-4">
-                    <h6>Encrypt Your Wallet</h6>
-                    <p class="small mb-0">Encrypt your private keys to protect your wallet. Zecwallet Lite uses Viewkeys to sync the chain to keep your funds safe!</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-
-            <div class="col-md-7 ml-auto align-self-center">
-              <div class="tab-content text-center">
-
-                <div class="tab-pane fade show active" id="tab-1">
-                  <img class="shadow-3" src="assets/img/addresses.jpeg" alt="...">
-                </div>
-
-                <div class="tab-pane fade" id="tab-2">
-                  <img class="shadow-3" src="assets/img/memos.jpeg" alt="...">
-                </div>
-
-                <div class="tab-pane fade" id="tab-3">
-                  <img class="shadow-3" src="assets/img/hdwallet.png" alt="...">
-                </div>
-
-                <div class="tab-pane fade" id="tab-4">
-                  <img class="shadow-3" src="assets/img/encrypt.jpeg" alt="...">
-                </div>
-
+      <section class="section">
+          <div class="container">
+            <header class="section-header">
+              <h2>Full Privacy. Full Control.</h2>
+              <hr>
+              <p class="lead">Send and Receive shileded and private transactions via your own full node.</p>
+            </header>
+  
+            <div class="row gap-y">
+  
+              <div class="col-md-8 mx-auto mb-7">
+                <img src="assets/img/fullnode-features.png" alt="..." data-aos="fade-up" data-aos-duration="2000">
               </div>
+  
+  
+              <div class="w-100"></div>
+  
+  
+              <div class="col-md-6 col-xl-4">
+                <div class="media">
+                  <div class="lead-6 line-height-1 text-dark w-70px"><i class="icon-laptop"></i></div>
+                  <div class="media-body">
+                    <h5>Your Own Full Node</h5>
+                    <p>Run your own full node, and send and recieve transactions via your own full node to completely be in control of your own privacy.</p>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="col-md-6 col-xl-4">
+                <div class="media">
+                  <div class="lead-6 line-height-1 text-primary w-70px"><i class="icon-linegraph"></i></div>
+                  <div class="media-body">
+                    <h5>Connect over Tor</h5>
+                    <p>Optionally connect over Tor for a completely private zcash experience.</p>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="col-md-6 col-xl-4">
+                <div class="media">
+                  <div class="lead-6 line-height-1 text-info w-70px"><i class="icon-key"></i></div>
+                  <div class="media-body">
+                    <h5>Own your own private keys</h5>
+                    <p>Your private keys are completely on your own node and in your control. Import and Export your private keys as you will.</p>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="col-md-6 col-xl-4">
+                <div class="media">
+                  <div class="lead-6 line-height-1 text-warning w-70px"><i class="icon-attachment"></i></div>
+                  <div class="media-body">
+                    <h5>Embedded Zcash Node</h5>
+                    <p>Run your own external node or let Zecwallet start it's embedded node managed by Zecwallet.</p>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="col-md-6 col-xl-4">
+                <div class="media">
+                  <div class="lead-6 line-height-1 text-danger w-70px"><i class="icon-download"></i></div>
+                  <div class="media-body">
+                    <h5>Fast Sync</h5>
+                    <p>Zecwallet's embedded node features Fast Sync, which can sync the zcash blockchain upto 33% faster than an external node.</p>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="col-md-6 col-xl-4">
+                <div class="media">
+                  <div class="lead-6 line-height-1 text-success w-70px"><i class="icon-chat"></i></div>
+                  <div class="media-body">
+                    <h5>Support</h5>
+                    <p>Extensive documentation, including video tutorials <a href="https://docs.zecwallet.co">on the docs site</a>.</p>
+                  </div>
+                </div>
+              </div>
+  
             </div>
-
-
+  
           </div>
-
-
-        </div>
-      </section>
+        </section>
 
 
       <!--
@@ -171,10 +192,10 @@
           <div class="row">
             <div class="col-md-6 align-self-center text-center text-md-left mb-7 mb-md-0">
               <h2>Download</h2>
-              <p class="lead">Download Zecwallet Lite for <span id="os_name"></span>.</p>
+              <p class="lead">Download Zecwallet Full Node for <span id="os_name"></span>.</p>
 
               <div class="gap-xy-2 mt-7" id="platform_download">
-                  <a id="default_download" class="btn btn-lg btn-round btn-white" href="https://github.com/adityapk00/zecwallet-lite/releases"><i class="fa lead-1 mr-2"></i>Download From GitHub</a>
+                  <a id="default_download" class="btn btn-lg btn-round btn-white" href="https://github.com/zcashfoundation/zecwallet/releases"><i class="fa lead-1 mr-2"></i>Download From GitHub</a>
               </div>
             </div>
 
@@ -206,7 +227,7 @@
           $( () => {
             $("#os_name").append(`${navigator.platform.split(" ")[0]}`);
 
-            $.get("https://api.github.com/repos/adityapk00/zecwallet-lite/releases", (data) => {
+            $.get("https://api.github.com/repos/zcashfoundation/zecwallet/releases", (data) => {
               $("#default_download").hide();
 
               for (let asset of data[0].assets) {
@@ -259,15 +280,16 @@
           <h2>Explore more Zecwallet Projects</h2>
         </header>
 
+
         <div class="row gap-y">
 
           <div class="col-md-6">
-            <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="/fullnode.html">
+            <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="/index.html">
               <div style="display: block">
                 <p style="float: left; padding-right: 20px;"><i class="fa icon-desktop lead-7 text-primary"></i></p>
-                <h5 class="fw-500 my-4">Zecwallet Fullnode</h5>
+                <h5 class="fw-500 my-4">Zecwallet Lite</h5>
               </div>
-              <p class="mb-0">Zecwallet UI that runs against your local Zcash full node. Can run over Tor for additional privacy. Comes with an embedded Zcashd full node.<br/>&nbsp;</p>
+              <p class="mb-0">A fully features light client with full support for shielded addresses including memos. Get started in seconds. <br/>&nbsp;</p>
             </a>
           </div>
 
@@ -313,18 +335,18 @@
     |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
     !-->
     <section class="section py-7" style="background-color: #8ea6e6">
-        <div class="container">
-          <div class="row gap-y align-items-center">
-            <div class="col-md-9">
-              <h4 class="mb-0 text-white text-center text-md-left">Zecwallet Lite is an open source project with a permissive MIT license and is supported by a grant from the Zcash Foundation.</h4>
-            </div>
-  
-            <div class="col-md-3 text-center text-md-right">
-              <a class="btn btn-lg btn-round btn-light" href="https://github.com/adityapk00/zecwallet-lite">View On GitHub</a>
-            </div>
+      <div class="container">
+        <div class="row gap-y align-items-center">
+          <div class="col-md-9">
+            <h4 class="mb-0 text-white text-center text-md-left">Zecwallet Lite is an open source project with a permissive MIT license and is supported by a grant from the Zcash Foundation.</h4>
+          </div>
+
+          <div class="col-md-3 text-center text-md-right">
+            <a class="btn btn-lg btn-round btn-light" href="https://github.com/adityapk00/zecwallet-lite">View On GitHub</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
     <!--
@@ -388,7 +410,7 @@
         <div class="row gap-y align-items-center">
 
           <div class="col-6 col-lg-3">
-            <a href="index.html"><img src="assets/img/favicon.png" style="width: 32px;" alt="logo"></a>
+            <a href="index.html"><img src="assets/img/favicon-fullnode.png" style="width: 32px;" alt="logo"></a>
           </div>
 
           <div class="col-6 col-lg-3 text-right order-lg-last">
