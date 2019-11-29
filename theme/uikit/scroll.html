@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Few components and script to help you with scrolling to a point or display a content on scroll.">
+    <meta name="keywords" content="scroll, scroll top, scrollto, smooth scroll, animation, aos, plugin, animate on scroll">
+
+    <title>TheSaaS — Scroll</title>
+
+    <!-- Styles -->
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
+  </head>
+
+  <body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+          <a class="navbar-brand" href="../index.html">
+            <img class="logo-dark" src="../assets/img/logo-dark.png" alt="logo">
+            <img class="logo-light" src="../assets/img/logo-light.png" alt="logo">
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <span class="navbar-divider d-mobile-none"></span>
+
+          <ul class="nav nav-navbar">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Demos <span class="arrow"></span></a>
+              <ul class="nav">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SaaS <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../demo/saas-1.html">SaaS 1</a>
+                    <a class="nav-link" href="../demo/saas-2.html">SaaS 2</a>
+                    <a class="nav-link" href="../demo/saas-3.html">SaaS 3</a>
+                    <a class="nav-link" href="../demo/saas-4.html">SaaS 4</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Software <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../demo/software-1.html">Software 1</a>
+                    <a class="nav-link" href="../demo/software-2.html">Software 2</a>
+                    <a class="nav-link" href="../demo/software-3.html">Software 3</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">App <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../demo/app-finance.html">Finance</a>
+                    <a class="nav-link" href="../demo/app-social.html">Social</a>
+                    <a class="nav-link" href="../demo/app-taxi.html">Taxi</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Marketing <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../demo/marketing-1.html">Marketing 1</a>
+                    <a class="nav-link" href="../demo/marketing-2.html">Marketing 2</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Listing <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../demo/listing-1.html">Listing 1</a>
+                    <a class="nav-link" href="../demo/listing-2.html">Listing 2</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../demo/finance-1.html">Finance</a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages <span class="arrow"></span></a>
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../page/how-it-works.html">How it works</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../page/pricing.html">Pricing</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/portfolio.html">Potfolio listing</a>
+                    <a class="nav-link" href="../page/portfolio-single.html">Potfolio single</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Careers <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/career.html">Careers listing</a>
+                    <a class="nav-link" href="../page/career-single.html">Careers single</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Service <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/service-1.html">Service 1</a>
+                    <a class="nav-link" href="../page/service-2.html">Service 2</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/about-1.html">About 1</a>
+                    <a class="nav-link" href="../page/about-2.html">About 2</a>
+                    <a class="nav-link" href="../page/about-3.html">About 3</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/contact-1.html">Contact 1</a>
+                    <a class="nav-link" href="../page/contact-2.html">Contact 2</a>
+                    <a class="nav-link" href="../page/contact-3.html">Contact 3</a>
+                  </nav>
+                </li>
+
+                <li class="nav-divider"></li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Extra <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/demo.html">Request demo</a>
+                    <a class="nav-link" href="../page/coming-soon.html">Coming soon</a>
+                    <a class="nav-link" href="../page/terms.html">Terms</a>
+                    <a class="nav-link" href="../page/error-404.html">Error 404</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">User <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/user-login.html">Login</a>
+                    <a class="nav-link" href="../page/user-register.html">Register</a>
+                    <a class="nav-link" href="../page/user-recover.html">Recover</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Docs <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../docs/index.html">Support center</a>
+                    <a class="nav-link" href="../docs/articles.html">Articles</a>
+                    <a class="nav-link" href="../docs/faq.html">FAQ</a>
+                  </nav>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog <span class="arrow"></span></a>
+              <nav class="nav">
+                <a class="nav-link" href="../blog/classic.html">Classic</a>
+                <a class="nav-link" href="../blog/grid.html">Grid</a>
+                <a class="nav-link" href="../blog/list.html">List</a>
+                <a class="nav-link" href="../blog/sidebar.html">Sidebar</a>
+                <div class="nav-divider"></div>
+                <a class="nav-link" href="../blog/post-1.html">Post 1</a>
+                <a class="nav-link" href="../blog/post-2.html">Post 2</a>
+              </nav>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop <span class="arrow"></span></a>
+              <nav class="nav">
+                <a class="nav-link" href="../shop/list.html">List</a>
+                <a class="nav-link" href="../shop/item.html">Item</a>
+                <a class="nav-link" href="../shop/cart.html">Cart</a>
+                <a class="nav-link" href="../shop/checkout.html">Checkout</a>
+              </nav>
+            </li>
+
+            <li class="nav-item nav-mega">
+              <a class="nav-link" href="#">Blocks <span class="arrow"></span></a>
+              <nav class="nav px-lg-2 py-lg-4">
+                <div class="container-fluid">
+                  <div class="row">
+
+                    <div class="col-lg">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../block/blog.html">Blog</a>
+                        <a class="nav-link" href="../block/career.html">Career</a>
+                        <a class="nav-link" href="../block/contact.html">Contact</a>
+                        <a class="nav-link" href="../block/content.html">Content</a>
+                        <a class="nav-link" href="../block/counter.html">Counter</a>
+                        <a class="nav-link" href="../block/cover.html">Cover</a>
+                        <a class="nav-link" href="../block/cta.html">Call to action</a>
+                        <a class="nav-link" href="../block/download.html">Download</a>
+                        <a class="nav-link" href="../block/explore.html">Explore</a>
+                        <a class="nav-link" href="../block/faq.html">FAQ</a>
+                      </nav>
+                    </div>
+
+                    <div class="col-lg">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../block/feature-text.html">Feature textual</a>
+                        <a class="nav-link" href="../block/feature.html">Feature</a>
+                        <a class="nav-link" href="../block/footer.html">Footer</a>
+                        <a class="nav-link" href="../block/gallery.html">Gallery</a>
+                        <a class="nav-link" href="../block/header.html">Header</a>
+                        <a class="nav-link" href="../block/map.html">Map</a>
+                        <a class="nav-link" href="../block/modal.html">Modal</a>
+                        <a class="nav-link" href="../block/offcanvas.html">Offcanvas</a>
+                        <a class="nav-link" href="../block/partner.html">Partner</a>
+                        <a class="nav-link" href="../block/popup.html">Popup</a>
+                      </nav>
+                    </div>
+
+                    <div class="col-lg">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../block/portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="../block/pricing.html">Pricing</a>
+                        <a class="nav-link" href="../block/process.html">Process</a>
+                        <a class="nav-link" href="../block/service.html">Service</a>
+                        <a class="nav-link" href="../block/shop.html">Shop</a>
+                        <a class="nav-link" href="../block/signup.html">Signup</a>
+                        <a class="nav-link" href="../block/subscribe.html">Subscribe</a>
+                        <a class="nav-link" href="../block/team.html">Team</a>
+                        <a class="nav-link" href="../block/testimonial.html">Testimonial</a>
+                        <a class="nav-link" href="../block/video.html">Video</a>
+                      </nav>
+                    </div>
+
+                  </div>
+                </div>
+              </nav>
+            </li>
+
+            <li class="nav-item nav-mega">
+              <a class="nav-link active" href="#">UI Kit <span class="arrow"></span></a>
+              <nav class="nav px-lg-2 py-lg-4">
+                <div class="container-fluid">
+                  <div class="row">
+
+                    <div class="col-lg-3">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../uikit/accordion.html">Accordion</a>
+                        <a class="nav-link" href="../uikit/alert.html">Alert</a>
+                        <a class="nav-link" href="../uikit/badge.html">Badge</a>
+                        <a class="nav-link" href="../uikit/button.html">Button</a>
+                        <a class="nav-link" href="../uikit/card.html">Card</a>
+                        <a class="nav-link" href="../uikit/color.html">Colors</a>
+                        <a class="nav-link" href="../uikit/constellation.html">Constellation</a>
+                        <a class="nav-link" href="../uikit/content.html">Content</a>
+                        <a class="nav-link" href="../uikit/countdown.html">Count down</a>
+                        <a class="nav-link" href="../uikit/countup.html">Count up</a>
+                      </nav>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../uikit/dropdown.html">Dropdown</a>
+                        <a class="nav-link" href="../uikit/form.html">Form</a>
+                        <a class="nav-link" href="../uikit/gallery.html">Gallery</a>
+                        <a class="nav-link" href="../uikit/granim.html">Granim</a>
+                        <a class="nav-link" href="../uikit/icon.html">Icon</a>
+                        <a class="nav-link" href="../uikit/image.html">Image</a>
+                        <a class="nav-link" href="../uikit/lightbox.html">Lightbox</a>
+                        <a class="nav-link" href="../uikit/map.html">Map</a>
+                        <a class="nav-link" href="../uikit/misc.html">Miscellaneous</a>
+                        <a class="nav-link" href="../uikit/modal.html">Modal</a>
+                      </nav>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../uikit/nav.html">Nav</a>
+                        <a class="nav-link" href="../uikit/navbar.html">Navbar</a>
+                        <a class="nav-link" href="../uikit/offcanvas.html">Offcanvas</a>
+                        <a class="nav-link" href="../uikit/overlay.html">Overlay</a>
+                        <a class="nav-link" href="../uikit/popup.html">Popup</a>
+                        <a class="nav-link" href="../uikit/pricing.html">Pricing</a>
+                        <a class="nav-link" href="../uikit/process.html">Process</a>
+                        <a class="nav-link" href="../uikit/progress.html">Progress</a>
+                        <a class="nav-link active" href="../uikit/scroll.html">Scroll</a>
+                        <a class="nav-link" href="../uikit/section.html">Section</a>
+                      </nav>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../uikit/shuffle.html">Shuffle</a>
+                        <a class="nav-link" href="../uikit/slider.html">Slider</a>
+                        <a class="nav-link" href="../uikit/social.html">Social</a>
+                        <a class="nav-link" href="../uikit/tab.html">Tab</a>
+                        <a class="nav-link" href="../uikit/table.html">Table</a>
+                        <a class="nav-link" href="../uikit/topbar.html">Topbar</a>
+                        <a class="nav-link" href="../uikit/typing.html">Typing</a>
+                        <a class="nav-link" href="../uikit/typography.html">Typography</a>
+                        <a class="nav-link" href="../uikit/utility.html">Utility</a>
+                        <a class="nav-link" href="../uikit/video.html">Video</a>
+                      </nav>
+                    </div>
+
+                  </div>
+                </div>
+              </nav>
+            </li>
+
+          </ul>
+        </section>
+
+        <a class="btn btn-xs btn-round btn-success" href="https://themeforest.net/item/thesaas-responsive-bootstrap-saas-software-webapp-template/19778599?license=regular&open_purchase_for_item_id=19778599&purchasable=source&ref=thethemeio">Buy Now</a>
+
+      </div>
+    </nav><!-- /.navbar -->
+
+
+    <!-- Header -->
+    <header class="header pb-9 pt-10" style="background-image: url(../assets/img/bg/4.jpg)">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="fw-200 mb-6">Scroll</h1>
+            <p class="lead-2">Few components and script to help you with scrolling to a point or display a content on scroll.</p>
+
+            <hr class="w-50px ml-0">
+
+            <a class="text-dark opacity-50 small" href="index.html">Also, visit our documentation page.</a>
+          </div>
+        </div>
+      </div>
+    </header><!-- /.header -->
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Flash down
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section" id="section-flash-down">
+        <div class="container">
+          <header class="section-header">
+            <small>Scroll</small>
+            <h2>Flash Down</h2>
+            <hr>
+            <p class="lead">Animated flash / scroll down hints in both light and dark colors.</p>
+          </header>
+
+
+          <div class="row text-center">
+
+            <div class="col">
+              <a class="scroll-down-1" href="#scroll-top"><span></span></a>
+            </div>
+
+            <div class="col">
+              <a class="scroll-down-2" href="#scroll-top"><span></span></a>
+            </div>
+
+            <div class="col">
+              <a class="scroll-down-3" href="#scroll-top">
+                <span></span><span></span><span></span>
+              </a>
+            </div>
+
+            <div class="col">
+              <a class="scroll-down-4" href="#scroll-top"><span></span></a>
+            </div>
+
+            <div class="col">
+              <a class="scroll-down-5" href="#scroll-top"><span></span></a>
+            </div>
+
+          </div>
+
+
+
+          <h6 class="divider mt-8">White</h6>
+
+
+
+          <div class="row text-center bg-primary py-6">
+
+            <div class="col">
+              <a class="scroll-down-1 scroll-down-white" href="#scroll-top"><span></span></a>
+            </div>
+
+            <div class="col">
+              <a class="scroll-down-2 scroll-down-white" href="#scroll-top"><span></span></a>
+            </div>
+
+            <div class="col">
+              <a class="scroll-down-3 scroll-down-white" href="#scroll-top">
+                <span></span><span></span><span></span>
+              </a>
+            </div>
+
+            <div class="col">
+              <a class="scroll-down-4 scroll-down-white" href="#scroll-top"><span></span></a>
+            </div>
+
+            <div class="col">
+              <a class="scroll-down-5 scroll-down-white" href="#scroll-top"><span></span></a>
+            </div>
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Scroll top
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section id="scroll-top" class="section bg-gray">
+        <div class="container">
+          <header class="section-header">
+            <small>Scroll</small>
+            <h2>Scroll Top</h2>
+            <hr>
+            <p class="lead">Include a scroll to top button inside your pages to help user bad to header of page with one click.</p>
+          </header>
+
+
+          <p>Add following code to your page, maybe after your footer:</p>
+          <pre><code>&lt;button class="btn btn-circle btn-primary scroll-top">&lt;i class="fa fa-angle-up">&lt;/i>&lt;/button></code></pre>
+
+
+        </div>
+      </section>
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Scroll to section
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <small>Scroll</small>
+            <h2>Scroll To Section</h2>
+            <hr>
+            <p class="lead">Send your visitors to a specific section by clicking a button</p>
+          </header>
+
+
+          <p>For this purpose, you need to add an ID attribute to your target element, probably your <i>&lt;section></i>. Then, use that ID in value of <code>href</code> attribute of your <em>&lt;a></em> tag. For example, you have a demo section with following code:</p>
+
+          <pre><code>&lt;section class="section" id="section-demo">&lt;/section></code></pre>
+
+          <p>To scroll to the demo section, you need a link tag with <code>href="#section-demo"</code>, so it can scroll to the target element upon click. A sample button is as follow:</p>
+
+          <pre><code>&lt;a class="btn btn-primary" href="#section-demo">See demos&lt;/a></code></pre>
+
+          <hr class="my-7">
+
+          <p class="text-center"><a class="btn btn-lg btn-round btn-danger" href="#section-flash-down">Move to flash downs</a></p>
+
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Animate On Scroll (AOS)
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section id="aos" class="section overflow-hidden bg-gray">
+        <div class="container">
+          <header class="section-header">
+            <small>AOS</small>
+            <h2>Animate On Scroll</h2>
+            <hr>
+            <p class="lead">Small library to animate elements on your page as you scroll.</p>
+            <p class="small-2"><a href="https://github.com/michalsnik/aos" target="_blank">Official Website</a></p>
+          </header>
+
+
+          <p>AOS allows you to animate elements as you scroll down, and up. If you scroll back to top, elements will animate to it's previous state and are ready to animate again if you scroll down.</p>
+
+          <p>All you have to do is to add <code>data-aos</code> attribute to html element, like so:</p>
+          <pre><code>&lt;div data-aos="animation_name"></code></pre>
+
+          <p>Also, you can set other options such as duration, delay and offset:</p>
+          <pre><code>&lt;div data-aos-duration="1300" data-aos-delay="500" data-aos-offset="200"></code></pre>
+
+          <p>To see the list of available animations, visit the <a href="https://github.com/michalsnik/aos#-animations" target="_blank">oficial documentation</a>.</p>
+
+          <p>It's recommended to add class <code>.overflow-hidden</code> to each section that contains animation, so you can be sure that your animated objects don't display outside of the section.</p>
+
+          <br><br>
+          <div class="row">
+
+            <div class="col h-200 bg-primary" data-aos="fade-up"></div>
+            <div class="col h-200 bg-danger" data-aos="slide-up" data-aos-delay="500"></div>
+            <div class="col h-200 bg-warning" data-aos="zoom-in" data-aos-delay="1000"></div>
+            <div class="col h-200 bg-dark" data-aos="flip-up" data-aos-delay="1500"></div>
+            <div class="col h-200 bg-success" data-aos="slide-left" data-aos-delay="2000"></div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+    </main><!-- /.main-content -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-6 col-lg-3">
+            <a href="../index.html"><img src="../assets/img/logo-dark.png" alt="logo"></a>
+          </div>
+
+          <div class="col-6 col-lg-3 text-right order-lg-last">
+            <div class="social">
+              <a class="social-facebook" href="https://www.facebook.com/thethemeio"><i class="fa fa-facebook"></i></a>
+              <a class="social-twitter" href="https://twitter.com/thethemeio"><i class="fa fa-twitter"></i></a>
+              <a class="social-instagram" href="https://www.instagram.com/thethemeio/"><i class="fa fa-instagram"></i></a>
+              <a class="social-dribbble" href="https://dribbble.com/thethemeio"><i class="fa fa-dribbble"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+              <a class="nav-link" href="../uikit/index.html">Elements</a>
+              <a class="nav-link" href="../block/index.html">Blocks</a>
+              <a class="nav-link" href="../page/about-1.html">About</a>
+              <a class="nav-link" href="../blog/grid.html">Blog</a>
+              <a class="nav-link" href="../page/contact-1.html">Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer><!-- /.footer -->
+
+
+    <!-- Scroll top -->
+    <button class="btn btn-circle btn-primary scroll-top"><i class="fa fa-angle-up"></i></button>
+
+
+    <!-- Scripts -->
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+  </body>
+</html>

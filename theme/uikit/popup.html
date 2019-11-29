@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Display a small peace of content inside a dialog, without grabbing much attention from user.">
+    <meta name="keywords" content="popup">
+
+    <title>TheSaaS — Popup</title>
+
+    <!-- Styles -->
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
+  </head>
+
+  <body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+          <a class="navbar-brand" href="../index.html">
+            <img class="logo-dark" src="../assets/img/logo-dark.png" alt="logo">
+            <img class="logo-light" src="../assets/img/logo-light.png" alt="logo">
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <span class="navbar-divider d-mobile-none"></span>
+
+          <ul class="nav nav-navbar">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Demos <span class="arrow"></span></a>
+              <ul class="nav">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SaaS <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../demo/saas-1.html">SaaS 1</a>
+                    <a class="nav-link" href="../demo/saas-2.html">SaaS 2</a>
+                    <a class="nav-link" href="../demo/saas-3.html">SaaS 3</a>
+                    <a class="nav-link" href="../demo/saas-4.html">SaaS 4</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Software <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../demo/software-1.html">Software 1</a>
+                    <a class="nav-link" href="../demo/software-2.html">Software 2</a>
+                    <a class="nav-link" href="../demo/software-3.html">Software 3</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">App <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../demo/app-finance.html">Finance</a>
+                    <a class="nav-link" href="../demo/app-social.html">Social</a>
+                    <a class="nav-link" href="../demo/app-taxi.html">Taxi</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Marketing <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../demo/marketing-1.html">Marketing 1</a>
+                    <a class="nav-link" href="../demo/marketing-2.html">Marketing 2</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Listing <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../demo/listing-1.html">Listing 1</a>
+                    <a class="nav-link" href="../demo/listing-2.html">Listing 2</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../demo/finance-1.html">Finance</a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages <span class="arrow"></span></a>
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../page/how-it-works.html">How it works</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../page/pricing.html">Pricing</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/portfolio.html">Potfolio listing</a>
+                    <a class="nav-link" href="../page/portfolio-single.html">Potfolio single</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Careers <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/career.html">Careers listing</a>
+                    <a class="nav-link" href="../page/career-single.html">Careers single</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Service <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/service-1.html">Service 1</a>
+                    <a class="nav-link" href="../page/service-2.html">Service 2</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/about-1.html">About 1</a>
+                    <a class="nav-link" href="../page/about-2.html">About 2</a>
+                    <a class="nav-link" href="../page/about-3.html">About 3</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/contact-1.html">Contact 1</a>
+                    <a class="nav-link" href="../page/contact-2.html">Contact 2</a>
+                    <a class="nav-link" href="../page/contact-3.html">Contact 3</a>
+                  </nav>
+                </li>
+
+                <li class="nav-divider"></li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Extra <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/demo.html">Request demo</a>
+                    <a class="nav-link" href="../page/coming-soon.html">Coming soon</a>
+                    <a class="nav-link" href="../page/terms.html">Terms</a>
+                    <a class="nav-link" href="../page/error-404.html">Error 404</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">User <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../page/user-login.html">Login</a>
+                    <a class="nav-link" href="../page/user-register.html">Register</a>
+                    <a class="nav-link" href="../page/user-recover.html">Recover</a>
+                  </nav>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Docs <span class="arrow"></span></a>
+                  <nav class="nav">
+                    <a class="nav-link" href="../docs/index.html">Support center</a>
+                    <a class="nav-link" href="../docs/articles.html">Articles</a>
+                    <a class="nav-link" href="../docs/faq.html">FAQ</a>
+                  </nav>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog <span class="arrow"></span></a>
+              <nav class="nav">
+                <a class="nav-link" href="../blog/classic.html">Classic</a>
+                <a class="nav-link" href="../blog/grid.html">Grid</a>
+                <a class="nav-link" href="../blog/list.html">List</a>
+                <a class="nav-link" href="../blog/sidebar.html">Sidebar</a>
+                <div class="nav-divider"></div>
+                <a class="nav-link" href="../blog/post-1.html">Post 1</a>
+                <a class="nav-link" href="../blog/post-2.html">Post 2</a>
+              </nav>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop <span class="arrow"></span></a>
+              <nav class="nav">
+                <a class="nav-link" href="../shop/list.html">List</a>
+                <a class="nav-link" href="../shop/item.html">Item</a>
+                <a class="nav-link" href="../shop/cart.html">Cart</a>
+                <a class="nav-link" href="../shop/checkout.html">Checkout</a>
+              </nav>
+            </li>
+
+            <li class="nav-item nav-mega">
+              <a class="nav-link" href="#">Blocks <span class="arrow"></span></a>
+              <nav class="nav px-lg-2 py-lg-4">
+                <div class="container-fluid">
+                  <div class="row">
+
+                    <div class="col-lg">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../block/blog.html">Blog</a>
+                        <a class="nav-link" href="../block/career.html">Career</a>
+                        <a class="nav-link" href="../block/contact.html">Contact</a>
+                        <a class="nav-link" href="../block/content.html">Content</a>
+                        <a class="nav-link" href="../block/counter.html">Counter</a>
+                        <a class="nav-link" href="../block/cover.html">Cover</a>
+                        <a class="nav-link" href="../block/cta.html">Call to action</a>
+                        <a class="nav-link" href="../block/download.html">Download</a>
+                        <a class="nav-link" href="../block/explore.html">Explore</a>
+                        <a class="nav-link" href="../block/faq.html">FAQ</a>
+                      </nav>
+                    </div>
+
+                    <div class="col-lg">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../block/feature-text.html">Feature textual</a>
+                        <a class="nav-link" href="../block/feature.html">Feature</a>
+                        <a class="nav-link" href="../block/footer.html">Footer</a>
+                        <a class="nav-link" href="../block/gallery.html">Gallery</a>
+                        <a class="nav-link" href="../block/header.html">Header</a>
+                        <a class="nav-link" href="../block/map.html">Map</a>
+                        <a class="nav-link" href="../block/modal.html">Modal</a>
+                        <a class="nav-link" href="../block/offcanvas.html">Offcanvas</a>
+                        <a class="nav-link" href="../block/partner.html">Partner</a>
+                        <a class="nav-link" href="../block/popup.html">Popup</a>
+                      </nav>
+                    </div>
+
+                    <div class="col-lg">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../block/portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="../block/pricing.html">Pricing</a>
+                        <a class="nav-link" href="../block/process.html">Process</a>
+                        <a class="nav-link" href="../block/service.html">Service</a>
+                        <a class="nav-link" href="../block/shop.html">Shop</a>
+                        <a class="nav-link" href="../block/signup.html">Signup</a>
+                        <a class="nav-link" href="../block/subscribe.html">Subscribe</a>
+                        <a class="nav-link" href="../block/team.html">Team</a>
+                        <a class="nav-link" href="../block/testimonial.html">Testimonial</a>
+                        <a class="nav-link" href="../block/video.html">Video</a>
+                      </nav>
+                    </div>
+
+                  </div>
+                </div>
+              </nav>
+            </li>
+
+            <li class="nav-item nav-mega">
+              <a class="nav-link active" href="#">UI Kit <span class="arrow"></span></a>
+              <nav class="nav px-lg-2 py-lg-4">
+                <div class="container-fluid">
+                  <div class="row">
+
+                    <div class="col-lg-3">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../uikit/accordion.html">Accordion</a>
+                        <a class="nav-link" href="../uikit/alert.html">Alert</a>
+                        <a class="nav-link" href="../uikit/badge.html">Badge</a>
+                        <a class="nav-link" href="../uikit/button.html">Button</a>
+                        <a class="nav-link" href="../uikit/card.html">Card</a>
+                        <a class="nav-link" href="../uikit/color.html">Colors</a>
+                        <a class="nav-link" href="../uikit/constellation.html">Constellation</a>
+                        <a class="nav-link" href="../uikit/content.html">Content</a>
+                        <a class="nav-link" href="../uikit/countdown.html">Count down</a>
+                        <a class="nav-link" href="../uikit/countup.html">Count up</a>
+                      </nav>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../uikit/dropdown.html">Dropdown</a>
+                        <a class="nav-link" href="../uikit/form.html">Form</a>
+                        <a class="nav-link" href="../uikit/gallery.html">Gallery</a>
+                        <a class="nav-link" href="../uikit/granim.html">Granim</a>
+                        <a class="nav-link" href="../uikit/icon.html">Icon</a>
+                        <a class="nav-link" href="../uikit/image.html">Image</a>
+                        <a class="nav-link" href="../uikit/lightbox.html">Lightbox</a>
+                        <a class="nav-link" href="../uikit/map.html">Map</a>
+                        <a class="nav-link" href="../uikit/misc.html">Miscellaneous</a>
+                        <a class="nav-link" href="../uikit/modal.html">Modal</a>
+                      </nav>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../uikit/nav.html">Nav</a>
+                        <a class="nav-link" href="../uikit/navbar.html">Navbar</a>
+                        <a class="nav-link" href="../uikit/offcanvas.html">Offcanvas</a>
+                        <a class="nav-link" href="../uikit/overlay.html">Overlay</a>
+                        <a class="nav-link active" href="../uikit/popup.html">Popup</a>
+                        <a class="nav-link" href="../uikit/pricing.html">Pricing</a>
+                        <a class="nav-link" href="../uikit/process.html">Process</a>
+                        <a class="nav-link" href="../uikit/progress.html">Progress</a>
+                        <a class="nav-link" href="../uikit/scroll.html">Scroll</a>
+                        <a class="nav-link" href="../uikit/section.html">Section</a>
+                      </nav>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <nav class="nav flex-column">
+                        <a class="nav-link" href="../uikit/shuffle.html">Shuffle</a>
+                        <a class="nav-link" href="../uikit/slider.html">Slider</a>
+                        <a class="nav-link" href="../uikit/social.html">Social</a>
+                        <a class="nav-link" href="../uikit/tab.html">Tab</a>
+                        <a class="nav-link" href="../uikit/table.html">Table</a>
+                        <a class="nav-link" href="../uikit/topbar.html">Topbar</a>
+                        <a class="nav-link" href="../uikit/typing.html">Typing</a>
+                        <a class="nav-link" href="../uikit/typography.html">Typography</a>
+                        <a class="nav-link" href="../uikit/utility.html">Utility</a>
+                        <a class="nav-link" href="../uikit/video.html">Video</a>
+                      </nav>
+                    </div>
+
+                  </div>
+                </div>
+              </nav>
+            </li>
+
+          </ul>
+        </section>
+
+        <a class="btn btn-xs btn-round btn-success" href="https://themeforest.net/item/thesaas-responsive-bootstrap-saas-software-webapp-template/19778599?license=regular&open_purchase_for_item_id=19778599&purchasable=source&ref=thethemeio">Buy Now</a>
+
+      </div>
+    </nav><!-- /.navbar -->
+
+
+    <!-- Header -->
+    <header class="header pb-9 pt-10" style="background-image: url(../assets/img/bg/4.jpg)">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="fw-200 mb-6">Popup</h1>
+            <p class="lead-2">Display a small peace of content inside a dialog, without grabbing much attention from user.</p>
+
+            <hr class="w-50px ml-0">
+
+            <a class="text-dark opacity-50 small" href="index.html">Also, visit our documentation page.</a>
+          </div>
+        </div>
+      </div>
+    </header><!-- /.header -->
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Basics
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section id="basics" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Basics</h2>
+            <hr>
+            <p>Here's the guide on how to create a simple popup and open it by pressing a button.</p>
+          </header>
+
+
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+
+              <p>The following HTML code creates the most basic popup with a close button. Probably the best place for this code is after the footer.</p>
+              <code><pre>&lt;div id="popup-basic" class="popup col-6 col-md-4">
+  &lt;button type="button" class="close" data-dismiss="popup" aria-label="Close">
+    &lt;span aria-hidden="true">&times;&lt;/span>
+  &lt;/button>
+  ...
+&lt;/div></pre></code>
+
+              <p>Like a modal, you can toggle the popup from a button with <code>data-toggle="popup"</code> and <code>data-target="#popup-id"</code>:</p>
+
+              <pre><code>&lt;button class="btn btn-primary" type="button" data-toggle="popup" data-target="#popup-basic">Open Popup&lt;/button></code></pre>
+
+
+              <div class="text-center mt-7">
+                <button class="btn btn-primary" type="button" data-toggle="popup" data-target="#popup-basic">Open Popup</button>
+              </div>
+
+              <hr class="my-7">
+
+              <p>As you might notice, you can specify a responsive width for your popup using the <code>.col-*</code> classes which is part of Bootstrap grid system. Also, you can set a fixed or percentage width using <code>.w-*</code> utility classes.</p>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Modifiers
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section id="modifiers" class="section bg-gray">
+        <div class="container">
+          <header class="section-header">
+            <h2>Modifiers</h2>
+            <hr>
+            <p>To give some sprits to your popups, iability to change position and animation would be awesome.</p>
+          </header>
+
+
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+
+              <h4>Position</h4>
+              <p>The default position of the popups are bottom-right. To change this default value, simply add <code>data-position</code> to your <code>.popup</code> with one of the following values:<br><code>top-left</code> | <code>top-center</code> | <code>top-right</code> | <code>bottom-left</code> | <code>bottom-center</code> | <code>bottom-right</code></p>
+
+              <div class="text-center gap-xy mt-7">
+                <button class="btn btn-primary w-175" type="button" data-toggle="popup" data-target="#popup-top-left">Top left</button>
+                <button class="btn btn-primary w-175" type="button" data-toggle="popup" data-target="#popup-top-center">Top center</button>
+                <button class="btn btn-primary w-175" type="button" data-toggle="popup" data-target="#popup-top-right">Top right</button>
+              </div>
+
+              <div class="text-center gap-xy mt-4">
+                <button class="btn btn-primary w-175" type="button" data-toggle="popup" data-target="#popup-bottom-left">Bottom left</button>
+                <button class="btn btn-primary w-175" type="button" data-toggle="popup" data-target="#popup-bottom-center">Bottom center</button>
+                <button class="btn btn-primary w-175" type="button" data-toggle="popup" data-target="#popup-bottom-right">Bottom right</button>
+              </div>
+
+
+              <hr class="my-8">
+
+
+              <h4>Animation</h4>
+              <p>The default animation of the popup component is fade. You can change this default behavior by <code>data-animation</code> attribute which can accept one of the following valuse:<br><code>slide-up</code> | <code>slide-down</code> | <code>slide-left</code> | <code>slide-right</code></p>
+
+              <div class="text-center gap-xy mt-7">
+                <button class="btn btn-primary" type="button" data-toggle="popup" data-target="#popup-slide-up">Slide Up</button>
+                <button class="btn btn-primary" type="button" data-toggle="popup" data-target="#popup-slide-down">Slide Down</button>
+                <button class="btn btn-primary" type="button" data-toggle="popup" data-target="#popup-slide-left">Slide Left</button>
+                <button class="btn btn-primary" type="button" data-toggle="popup" data-target="#popup-slide-right">Slide Right</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Options
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section id="options" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Options</h2>
+            <hr>
+            <p>Our popups has some useful options such as auto show in page load or exit show.</p>
+          </header>
+
+
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+
+              <h4>Autohide</h4>
+              <p>You can set a deadline for appearance of your popup. Simply add <code>data-autohide="5000"</code> to your popup to hide it after five seconds. You can change it to any other integer.</p>
+
+              <div class="text-center mt-7">
+                <button class="btn btn-primary" type="button" data-toggle="popup" data-target="#popup-autohide">3 seconds popup</button>
+              </div>
+
+
+              <h4 class="mt-7">Autoshow</h4>
+              <p>A popup can be set to show once the page loads (like the one you saw on page load) with an optional delay time in milliseconds. For this purpose, simply add <code>data-autoshow="5000"</code> to your <code>.popup</code> element, so it'll display 5 seconds after the page load; like the one you saw in this page.</p>
+
+
+              <h4 class="mt-7">Exitshow</h4>
+              <p>An exitshow popup is a popup that displays once the cursor left an element. For most cases, the element is <code>&lt;body></code> tag. To achieve this goal, simply add a <code>data-exitshow="selector"</code> to your popup element, which <em>selector</em> is a jQuery selector. For example, <code>data-exitshow="body"</code> will display your popup once the cursor leaves the <em>&lt;body></em> element. Also, you can have an optional data attribute of <code>data-delay="1000"</code> which add a delay in milliseconds before opening the popup.</p>
+              <p>To make it more understandable, we have an example here. Simply move your cursor inside the following block and then exit from the area to see a popup after 1 second.</p>
+
+              <div id="exitshow-target" class="h-200 bg-secondary mt-6" style="border: 2px dashed #0facf3;"></div>
+
+              <div class="alert alert-info mt-7">Please note that to not disturb visitors, exitshow is a one-time event.</div>
+
+
+              <h4 class="mt-7">Once</h4>
+              <p>An <em>once</em> popup is a popup that displays only one time to a user per browser. We use localStorage to store the data. So when a user see this kind of popup, he won't see it again unless he uses another browser or clear his localStorage.</p>
+              <p>To have such a popup, simply add <code>data-once="key"</code> to your popup which <em>key</em> is a string that we store in the localStorage to compare and figure out this popup has already displayed or not. You probably need to stop displaying the popup after clicking on a button (e.g. "Got it" button on cookie warning message). In this case, you need to add a <code>data-once-button="true"</code> to your desire button as well.</p>
+
+              <div class="text-center mt-7">
+                <button class="btn btn-primary" type="button" data-toggle="popup" data-target="#popup-once">Once popup with button</button>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+    </main><!-- /.main-content -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-6 col-lg-3">
+            <a href="../index.html"><img src="../assets/img/logo-dark.png" alt="logo"></a>
+          </div>
+
+          <div class="col-6 col-lg-3 text-right order-lg-last">
+            <div class="social">
+              <a class="social-facebook" href="https://www.facebook.com/thethemeio"><i class="fa fa-facebook"></i></a>
+              <a class="social-twitter" href="https://twitter.com/thethemeio"><i class="fa fa-twitter"></i></a>
+              <a class="social-instagram" href="https://www.instagram.com/thethemeio/"><i class="fa fa-instagram"></i></a>
+              <a class="social-dribbble" href="https://dribbble.com/thethemeio"><i class="fa fa-dribbble"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+              <a class="nav-link" href="../uikit/index.html">Elements</a>
+              <a class="nav-link" href="../block/index.html">Blocks</a>
+              <a class="nav-link" href="../page/about-1.html">About</a>
+              <a class="nav-link" href="../blog/grid.html">Blog</a>
+              <a class="nav-link" href="../page/contact-1.html">Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer><!-- /.footer -->
+
+
+
+    <!--
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | Popups
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    !-->
+
+    <!-- Basic -->
+    <div id="popup-basic" class="popup col-6 col-md-4">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Positions -->
+    <div id="popup-top-left" class="popup col-6 col-md-4" data-position="top-left">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup-top-center" class="popup col-6 col-md-4" data-position="top-center">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup-top-right" class="popup col-6 col-md-4" data-position="top-right">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup-bottom-left" class="popup col-6 col-md-4" data-position="bottom-left">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup-bottom-center" class="popup col-6 col-md-4" data-position="bottom-center">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup-bottom-right" class="popup col-6 col-md-4" data-position="bottom-right">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Animations -->
+    <div id="popup-slide-up" class="popup col-6 col-md-4" data-animation="slide-up">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup-slide-down" class="popup col-6 col-md-4" data-position="top-right" data-animation="slide-down">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup-slide-left" class="popup col-6 col-md-4" data-animation="slide-left">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="popup-slide-right" class="popup col-6 col-md-4" data-position="bottom-left" data-animation="slide-right">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Autohide -->
+    <div id="popup-autohide" class="popup col-6 col-md-4" data-animation="slide-up" data-autohide="3000">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Autoshow -->
+    <div id="popup-autoshow" class="popup col-6 col-md-4" data-animation="slide-up" data-autoshow="2000" data-autohide="5000">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Exitshow -->
+    <div id="popup-autoshow" class="popup col-6 col-md-4" data-position="bottom-center" data-animation="slide-up" data-exitshow="#exitshow-target" data-delay="1000">
+      <button type="button" class="close" data-dismiss="popup" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="media">
+        <img class="avatar mr-5" src="../assets/img/avatar/1.jpg" alt="avatar">
+        <div class="media-body">
+          <h5>An introduction?</h5>
+          <p class="mb-0">We'd like to welcome you to our website and hope you have a great time browsing our template.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Once -->
+    <div id="popup-once" class="popup col-10 py-4" data-position="bottom-center" data-animation="slide-up" data-once="cookie-key">
+      <div class="row gap-y align-items-center">
+        <div class="col-md">
+          This website uses cookies to ensure you get the best experience on our website. <a href="#">Lean more</a>
+        </div>
+
+        <div class="col-md-auto">
+          <button class="btn btn-sm btn-warning" data-dismiss="popup" data-once-button="truee">Got it</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+  </body>
+</html>
