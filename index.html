@@ -8,6 +8,9 @@
 
     <title>Zecwallet Lite - Fully featured Zcash wallet</title>
 
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- Styles -->
     <link href="assets/css/page.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -28,7 +31,7 @@
 
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
       <div class="container">
 
         <div class="navbar-left">
@@ -43,29 +46,41 @@
           <span class="navbar-divider d-mobile-none"></span>
 
           <nav class="nav nav-navbar">
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Help</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#download">Download</a>
+            <a class="nav-link" href="#projects">Products</a>
+            <a class="nav-link" href="#contact">Support</a>
           </nav>
         </section>
 
-        <a class="btn btn-sm btn-round btn-dark" href="readme.html">Read me</a>
+        <a class="btn btn-sm btn-round btn-dark" href="https://docs.zecwallet.co">Docs</a>
 
       </div>
     </nav><!-- /.navbar -->
 
-
+    <!--
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | Block 16 cover
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    !-->
     <!-- Header -->
-    <header class="header text-white pt-12 pb-10" style="background-image: linear-gradient(-45deg, #667eea 0%, #764ba2 100%);">
+    <header class="header">
       <div class="container">
-        <h1 class="display-4">Zecwallet Lite</h1>
-        <p class="lead-1 mt-6">Zecwallet Lite is a fully featured shielded wallet for Zcash.</p>
-        <p class="lead-2 mt-6">Get started in under a minute. No blockchain download needed!</p>
-        <p class="lead-2 mt-6">&nbsp;</p>
-        <a class="btn btn-lg btn-round btn-light" href="#">Take a test drive</a>
-        
+        <div class="row align-items-center h-100">
+
+          <div class="col-md-4 mr-auto">
+            <h1 class="fw-600">Zecwallet Lite</h1>
+            <br>
+            <p class="lead-3">Zecwallet Lite is a fully featured shielded wallet for Zcash.</p>
+            <p class="lead-1">Syncs in under a minute. No blockchain download needed!</p>
+            <br>
+            <a class="btn btn-xl btn-round btn-info" href="#download">Download</a>
+          </div>
+
+          <div class="col-md-7">
+            <img src="assets/img/cover.jpeg" alt="...">
+          </div>
+
+        </div>
       </div>
     </header><!-- /.header -->
 
@@ -78,11 +93,10 @@
       | Block 12
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <section class="section">
+      <section class="section bg-gray">
         <div class="container">
           <header class="section-header">
-            <h2>Shielded By Default</h2>
-            <hr>
+            <h2>Private By Default</h2>
             <p class="lead">Send fully private, fully shielded transactions with ease!</p>
           </header>
 
@@ -106,13 +120,13 @@
                 <li class="nav-item">
                   <a class="nav-link" data-toggle="tab" href="#tab-3">
                     <h6>HD Wallet</h6>
-                    <p class="small mb-0">A single seed phrase derives all z-addresses and t-address.</p>
+                    <p class="small mb-0">A single seed phrase derives all z-addresses and t-address. Fully recover the entire wallet with just the seed.</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" data-toggle="tab" href="#tab-4">
-                    <h6>Full Wallet Recovery</h6>
-                    <p class="small mb-0">Recover the entire wallet, including incoming, outgoing transactions and memos using just the seed phrase.</p>
+                    <h6>Encrypt Your Wallet</h6>
+                    <p class="small mb-0">Encrypt your private keys to protect your wallet. Zecwallet Lite uses Viewkeys to sync the chain to keep your funds safe!</p>
                   </a>
                 </li>
               </ul>
@@ -131,11 +145,11 @@
                 </div>
 
                 <div class="tab-pane fade" id="tab-3">
-                  <img class="shadow-3" src="../assets/img/preview/header-image.jpg" alt="...">
+                  <img class="shadow-3" src="assets/img/hdwallet.png" alt="...">
                 </div>
 
                 <div class="tab-pane fade" id="tab-4">
-                  <img class="shadow-3" src="../assets/img/preview/header-particle.jpg" alt="...">
+                  <img class="shadow-3" src="assets/img/encrypt.jpeg" alt="...">
                 </div>
 
               </div>
@@ -154,92 +168,218 @@
       | Block 6
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
+      <a name="download"></a>
       <section class="section text-white overflow-hidden" style="background-image: linear-gradient(135deg, #6f86d6 0%, #48c6ef 100%);">
         <canvas class="constellation" data-radius="0"></canvas>
         <div class="container">
           <div class="row">
-
             <div class="col-md-6 align-self-center text-center text-md-left mb-7 mb-md-0">
               <h2>Download</h2>
               <p class="lead">Download Zecwallet Lite for Windows.</p>
 
-              <div class="gap-xy-2 mt-7">
-                <a class="btn btn-lg btn-round btn-white" href="#"><i class="fa lead-1 mr-2"></i> Windows Installer </a>
-                <a class="btn btn-lg btn-round btn-white" href="#"><i class="fa lead-1 mr-2"></i> Windows Binaries </a>
-              </div>
+              <div class="gap-xy-2 mt-7" id="platform_download"></div>
             </div>
 
             <div class="col-md-6 text-center">
-              <h2>More Platforms</h2>
+              <div class="accordion" id="accordion-1">
+                <div class="card">
+                  <h5 class="card-title">
+                    <a class="collapsed text-dark" data-toggle="collapse" href="#collapse-1-1">More Platforms And Binaries</a>
+                  </h5>
+
+                  <div id="collapse-1-1" class="collapse" data-parent="#accordion-1">
+                    <div class="card-body">
+                      <table class="table text-white">
+                        <thead>
+                          <tbody id="moreplatforms">
+                          </tbody>
+                        </thead>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
         </div>
+
+        <script type="text/javascript">
+          $( () => {
+            $.get("https://api.github.com/repos/zcashfoundation/zecwallet/releases", (data) => {
+              for (let asset of data[0].assets) {
+                $("#moreplatforms").append(`<tr><td><a class="text-dark" href="${asset.browser_download_url}">${asset.name}</a></td></tr>`);
+
+                // Windows
+                if (navigator.platform.indexOf("Win") > -1) {
+                  if (asset.name.toLowerCase().startsWith("windows-binaries")) {
+                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Windows Binaries</a>`)
+                  }
+                  if (asset.name.toLowerCase().startsWith("windows-installer")) {
+                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Windows Installer</a>`)
+                  }
+                }
+
+                // Linux
+                if (navigator.platform.indexOf("Linux") > -1) {
+                  if (asset.name.toLowerCase().startsWith("linux-binaries")) {
+                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Linux Binaries</a>`)
+                  }
+                  if (asset.name.toLowerCase().startsWith("linux-deb")) {
+                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Linux .DEB</a>`)
+                  }
+                }
+
+                // MacOS
+                if (navigator.platform.indexOf("Mac") > -1) {
+                  if (asset.name.toLowerCase().startsWith("macos")) {
+                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>MacOS DMG</a>`)
+                  }
+                }
+              }
+            });
+          });
+        </script>
       </section>
 
     </main>
 
 
-      <!--
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      | Block 2 Explore
-      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      !-->
-      <section class="section bg-gray">
-        <div class="container">
-          <header class="section-header">
-            <h2>Explore more Zecwallet Projects</h2>
-          </header>
+    <!--
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | Block 2 Explore
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    !-->
+    <a name="projects"></a>
+    <section class="section bg-gray">
+      <div class="container">
+        <header class="section-header">
+          <h2>Explore more Zecwallet Projects</h2>
+        </header>
 
 
-          <div class="row gap-y">
+        <div class="row gap-y">
 
-            <div class="col-md-6">
-              <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="#">
-                <div style="display: block">
-                  <p style="float: left; padding-right: 20px;"><i class="fa icon-desktop lead-7 text-primary"></i></p>
-                  <h5 class="fw-500 my-4">Zecwallet Fullnode</h5>
-                </div>
-                <p class="mb-0">Zecwallet UI that runs against your local Zcash full node. Can run over Tor for additional privacy. Comes with an embedded Zcashd full node.<br/>&nbsp;</p>
-              </a>
-            </div>
+          <div class="col-md-6">
+            <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="#">
+              <div style="display: block">
+                <p style="float: left; padding-right: 20px;"><i class="fa icon-desktop lead-7 text-primary"></i></p>
+                <h5 class="fw-500 my-4">Zecwallet Fullnode</h5>
+              </div>
+              <p class="mb-0">Zecwallet UI that runs against your local Zcash full node. Can run over Tor for additional privacy. Comes with an embedded Zcashd full node.<br/>&nbsp;</p>
+            </a>
+          </div>
 
-            <div class="col-md-6">
-              <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="#">
-                <div style="display: block">
-                  <p style="float: left; padding-right: 20px;"><i class="fa icon-notebook lead-7 text-warning"></i></p>
-                  <h5 class="fw-500 my-4">Paper Wallet</h5>
-                </div>
-                <p class="mb-0">Offline capable Sapling and Transparent address and private key generator. Runs on desktops, chromebooks, Raspbery Pi and more devices.</p>
-              </a>
-            </div>
+          <div class="col-md-6">
+            <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="#">
+              <div style="display: block">
+                <p style="float: left; padding-right: 20px;"><i class="fa icon-notebook lead-7 text-warning"></i></p>
+                <h5 class="fw-500 my-4">Paper Wallet</h5>
+              </div>
+              <p class="mb-0">Offline capable Sapling and Transparent address and private key generator. Runs on desktops, chromebooks, Raspbery Pi and more devices.</p>
+            </a>
+          </div>
 
-            <div class="col-md-6">
-              <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="#">
-                <div style="display: block">
-                  <p style="float: left; padding-right: 20px;"><i class="fa icon-edit lead-7 text-info"></i></p>
-                  <h5 class="fw-500 my-4">Command Line Lightwallet</h5>
-                </div>
-                <p class="mb-0">Command line light client for Zcash that can run on a variety of platforms. Fully scriptable.<br/>&nbsp;</p>
-              </a>
-            </div>
+          <div class="col-md-6">
+            <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="#">
+              <div style="display: block">
+                <p style="float: left; padding-right: 20px;"><i class="fa icon-edit lead-7 text-info"></i></p>
+                <h5 class="fw-500 my-4">Command Line Lightwallet</h5>
+              </div>
+              <p class="mb-0">Command line light client for Zcash that can run on a variety of platforms. Fully scriptable.<br/>&nbsp;</p>
+            </a>
+          </div>
 
-            <div class="col-md-6">
-              <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="#">
-                <div style="display: block">
-                    <p style="float: left; padding-right: 20px;"><i class="fa icon-phone lead-7 text-danger"></i></p>
-                  <h5 class="fw-500 my-4">Companion App for Android</h5>
-                </div>
-                <p class="mb-0">Connect to your Zecwallet Lite or Fullnode from your Android phone, and securely send shielded and transparent transactions from your phone.</p>
-              </a>
-            </div>
+          <div class="col-md-6">
+            <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="#">
+              <div style="display: block">
+                  <p style="float: left; padding-right: 20px;"><i class="fa icon-phone lead-7 text-danger"></i></p>
+                <h5 class="fw-500 my-4">Companion App for Android</h5>
+              </div>
+              <p class="mb-0">Connect to your Zecwallet Lite or Fullnode from your Android phone, and securely send shielded and transparent transactions from your phone.</p>
+            </a>
+          </div>
 
+        </div>
+
+
+      </div>
+    </section>
+
+    <!--
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | Block 2
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    !-->
+    <section class="section py-7" style="background-color: #8ea6e6">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+          <div class="col-md-9">
+            <h4 class="mb-0 text-white text-center text-md-left">Zecwallet Lite is an open source project with a permissive MIT license and is supported by a grant from the Zcash Foundation.</h4>
+          </div>
+
+          <div class="col-md-3 text-center text-md-right">
+            <a class="btn btn-lg btn-round btn-light" href="https://github.com/adityapk00/zecwallet-lite">View On GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | Block 9 Contact
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    !-->
+    <a name="contact"></a>
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="display-3">Get Help & Support</h2>
+          <hr>
+          <p class="lead">There are many ways to get community support for Zecwallet.</p>
+        </header>
+
+
+        <div class="row gap-y text-center">
+
+          <div class="col-lg-4">
+            <a href="https://github.com/adityapk00/zecwallet-lite/issues" target="_blank">
+              <div class="card border p-5">
+                  <i class="fa fa-bug lead-7 text-info"></i>
+                <h5 class="mb-4">File an Issue</h5>
+                <p class="small-1 text-dark">If you run into bugs or issues, file an issue on the project's GitHub project.</p>
+              </div>
+            </a>
           </div>
 
 
-        </div>
-      </section>
+          <div class="col-lg-4">
+            <a href="https://forum.zcashcommunity.com/" target="_blank">
+            <div class="card border p-5">
+              <i class="fa fa-list lead-7 text-danger"></i>
+              <h5 class="mb-4">Zcash Community Forums</h5>
+              <p class="small-1 text-dark">The Zcash Community forum has an active group of users that can help.</p>              
+            </div>
+            </a>
+          </div>
 
+
+          <div class="col-lg-4">
+            <a href="https://chat.zcashcommunity.com/" target="_blank">
+              <div class="card border p-5">
+                <i class="fa fa-comments lead-7 text-warning"></i>
+                <h5 class="mb-4">Zcash Community Chat</h5>
+                <p class="small-1 text-dark">Zcash Community Chat is where developers and users hang out.</p>                
+              </div>
+            </a>
+          </div>
+          
+        </div>
+
+
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -252,19 +392,19 @@
 
           <div class="col-6 col-lg-3 text-right order-lg-last">
             <div class="social">
-              <a class="social-facebook" href="https://www.facebook.com/thethemeio"><i class="fa fa-facebook"></i></a>
-              <a class="social-twitter" href="https://twitter.com/thethemeio"><i class="fa fa-twitter"></i></a>
-              <a class="social-instagram" href="https://www.instagram.com/thethemeio/"><i class="fa fa-instagram"></i></a>
-              <a class="social-dribbble" href="https://dribbble.com/thethemeio"><i class="fa fa-dribbble"></i></a>
+              <!-- <a class="social-facebook" href="https://www.facebook.com/thethemeio"><i class="fa fa-facebook"></i></a> -->
+              <a class="social-twitter" href="https://twitter.com/zecwallet"><i class="fa fa-twitter"></i></a>
+              <!-- <a class="social-instagram" href="https://www.instagram.com/thethemeio/"><i class="fa fa-instagram"></i></a>
+              <a class="social-dribbble" href="https://dribbble.com/thethemeio"><i class="fa fa-dribbble"></i></a> -->
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
-              <a class="nav-link" href="#">About</a>
+              <!-- <a class="nav-link" href="#">About</a>
               <a class="nav-link" href="#">Blog</a>
               <a class="nav-link" href="#">Policy</a>
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">Contact</a> -->
             </div>
           </div>
 
