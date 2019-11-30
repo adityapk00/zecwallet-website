@@ -45,12 +45,19 @@
         <section class="navbar-mobile">
           <span class="navbar-divider d-mobile-none"></span>
 
-          <nav class="nav nav-navbar">
-            <a class="nav-link" href="https://paper.zecwallet.co/">Online Generator</a>
-            <a class="nav-link" href="#download">Download</a>
-            <a class="nav-link" href="#projects">Products</a>
-            <a class="nav-link" href="#contact">Support</a>
-          </nav>
+          <ul class="nav nav-navbar">
+            <li class="nav-item"><a class="nav-link" href="https://paper.zecwallet.co/">Online Generator</a></li>
+            <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products <span class="arrow"></span></a>
+              <nav class="nav">
+                <a class="nav-link" href="/index.html">Zecwallet Lite</a>
+                <a class="nav-link" href="/fullnode.html">Zecwallet FullNode</a>
+                <a class="nav-link" href="/paper.html">ZecPaperWallet</a>
+              </nav>
+            </li> 
+            <li class="nav-item"><a class="nav-link" href="#contact">Support</a>
+          </ul>
         </section>
 
         <a class="btn btn-sm btn-round btn-dark" href="https://docs.zecwallet.co">Docs</a>
@@ -337,7 +344,7 @@
                 <p style="float: left; padding-right: 20px;"><i class="fa icon-desktop lead-7 text-primary"></i></p>
                 <h5 class="fw-500 my-4">Zecwallet Lite</h5>
               </div>
-              <p class="mb-0">A fully features light client with full support for shielded addresses including memos. Get started in seconds. <br/>&nbsp;</p>
+              <p class="mb-0">A fully featured light client with full support for shielded addresses including memos. Get started in seconds. <br/>&nbsp;</p>
             </a>
           </div>
 
