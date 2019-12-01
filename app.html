@@ -17,7 +17,7 @@
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="icon" href="assets/img/favicon-fullnode.png">
 
     <!--  Open Graph Tags -->
     <meta property="og:title" content="Zecwallet Lite">
@@ -31,14 +31,14 @@
 
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
       <div class="container">
 
         <div class="navbar-left">
           <button class="navbar-toggler" type="button">&#9776;</button>
           <a class="navbar-brand" href="index.html">
-            <img class="logo-dark" src="assets/img/favicon.png" alt="logo">
-            <img class="logo-light" src="assets/img/favicon.png" alt="logo">
+            <img class="logo-dark" src="assets/img/favicon-fullnode.png" alt="logo">
+            <img class="logo-light" src="assets/img/favicon-fullnode.png" alt="logo">
           </a>
         </div>
 
@@ -47,7 +47,7 @@
 
           <ul class="nav nav-navbar">
             <li class="nav-item"><a class="nav-link" href="https://paper.zecwallet.co/">Online Generator</a></li>
-            <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+            <li class="nav-item"><a class="nav-link" href="#download">Get App</a></li>
             <li class="nav-item">
               <a class="nav-link" href="#">Products <span class="arrow"></span></a>
               <nav class="nav">
@@ -58,7 +58,7 @@
               </nav>
             </li> 
             <li class="nav-item"><a class="nav-link" href="#contact">Support</a>
-            <li class="nav-item"><a class="nav-link" href="https://docs.zecwallet.co">Docs</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://docs.zecwallet.co/android/">Docs</a></li>
           </ul>
         </section>
 
@@ -67,25 +67,29 @@
 
     <!--
     |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-    | Block 16 cover
+    | Block 6 cover
     |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
     !-->
     <!-- Header -->
-    <header class="header">
+    <header class="header text-white text-center text-lg-left" style="background-image: linear-gradient(135deg, #1b6bf9 0%, #764ba2 100%);">
       <div class="container">
         <div class="row align-items-center h-100">
 
-          <div class="col-md-4 mr-auto">
-            <h1 class="fw-600">Zecwallet Lite</h1>
-            <br>
-            <p class="lead-3">Zecwallet Lite is a fully featured shielded wallet for Zcash.</p>
-            <p class="lead-1">Syncs in under a minute. No blockchain download needed!</p>
-            <br>
-            <a class="btn btn-xl btn-round btn-info" href="#download">Download</a>
+          <div class="col-lg-5">
+            <h1 class="display-4">Android Companion App for Zecwallet</h1>
+            <p class="lead mt-5">Control your Zecwallet Lite or Zecwallet FullNode funds from your Android phone</p>
+            <hr class="w-10 ml-0 my-7">
+            <p class="gap-xy">
+              <a href="https://play.google.com/store/apps/details?id=com.adityapk.zcash.zqwandroid"><img src="assets/img/badge-google.png" alt="download on google play"></a>              
+            </p>
           </div>
 
-          <div class="col-md-7">
-            <img src="assets/img/cover.jpeg" alt="...">
+          <div class="col-lg-6 ml-auto">
+            <div class="video-wrapper ratio-16x9 rounded mt-8 mt-lg-0">
+              <div class="poster" style="background-image: url(../assets/img/preview/shot-1.png)"></div>
+              <button class="btn btn-circle btn-lg btn-primary"><i class="fa fa-play"></i></button>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/SIhG8fPsE8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
 
         </div>
@@ -98,74 +102,93 @@
 
       <!--
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-      | Block 12
+      | Block 1
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-      <section class="section bg-gray">
+      <section class="section">
         <div class="container">
           <header class="section-header">
-            <h2>Private By Default</h2>
-            <p class="lead">Send fully private, fully shielded transactions with ease!</p>
+            <h2>Securely Connect your Android phone to your desktop Zecwallet</h2>
           </header>
+
+
 
           <div class="row gap-y">
 
-
-            <div class="col-md-4">
-              <ul class="nav nav-tabs-shadow nav-tabs-border">
-                <li class="nav-item">
-                  <a class="nav-link active" data-toggle="tab" href="#tab-1">
-                    <h6>Shileded and Transparent addresses</h6>
-                    <p class="small mb-0">Full support for incoming and outgoing, z-addresses and t-addresses.</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#tab-2">
-                    <h6>Full Memo support</h6>
-                    <p class="small mb-0">Full support for incoming and outgoing memos</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#tab-3">
-                    <h6>HD Wallet</h6>
-                    <p class="small mb-0">A single seed phrase derives all z-addresses and t-address. Fully recover the entire wallet with just the seed.</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#tab-4">
-                    <h6>Encrypt Your Wallet</h6>
-                    <p class="small mb-0">Encrypt your private keys to protect your wallet. Zecwallet Lite uses Viewkeys to sync the chain to keep your funds safe!</p>
-                  </a>
-                </li>
-              </ul>
+            <div class="col-md-8 mx-auto mb-7">
+              <img src="../assets/img/preview/feature-tablet.png" alt="..." data-aos="fade-up" data-aos-duration="2000">
             </div>
 
 
-            <div class="col-md-7 ml-auto align-self-center">
-              <div class="tab-content text-center">
+            <div class="w-100"></div>
 
-                <div class="tab-pane fade show active" id="tab-1">
-                  <img class="shadow-3" src="assets/img/addresses.jpeg" alt="...">
+
+            <div class="col-md-6 col-xl-4">
+              <div class="media">
+                <div class="lead-6 line-height-1 text-dark w-70px"><i class="icon-lock"></i></div>
+                <div class="media-body">
+                  <h5>Secure</h5>
+                  <p>End-to-end encryption protects all your data and metadata .</p>
                 </div>
-
-                <div class="tab-pane fade" id="tab-2">
-                  <img class="shadow-3" src="assets/img/memos.jpeg" alt="...">
-                </div>
-
-                <div class="tab-pane fade" id="tab-3">
-                  <img class="shadow-3" src="assets/img/hdwallet.png" alt="...">
-                </div>
-
-                <div class="tab-pane fade" id="tab-4">
-                  <img class="shadow-3" src="assets/img/encrypt.jpeg" alt="...">
-                </div>
-
               </div>
             </div>
 
 
-          </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="media">
+                <div class="lead-6 line-height-1 text-primary w-70px"><i class="icon-linegraph"></i></div>
+                <div class="media-body">
+                  <h5>Connect across firewalls and networks</h5>
+                  <p>Connect to your desktop Zecwallet automagically, without fiddling with firewalls, ports or any other settings.</p>
+                </div>
+              </div>
+            </div>
 
+
+            <div class="col-md-6 col-xl-4">
+              <div class="media">
+                <div class="lead-6 line-height-1 text-info w-70px"><i class="icon-tools"></i></div>
+                <div class="media-body">
+                  <h5>Transparent and Shielded</h5>
+                  <p>Control all your transparent and shielded funds from your Android phone.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6 col-xl-4">
+              <div class="media">
+                <div class="lead-6 line-height-1 text-warning w-70px"><i class="icon-layers"></i></div>
+                <div class="media-body">
+                  <h5>Fully Featured</h5>
+                  <p>All features are supported on the App. Incoming & Outgoing memos, transaction list, balances, and more.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6 col-xl-4">
+              <div class="media">
+                <div class="lead-6 line-height-1 text-danger w-70px"><i class="icon-attachment"></i></div>
+                <div class="media-body">
+                  <h5>One-Scan Connect</h5>
+                  <p>Connect your phone and desktop with a single scan of a QR code. No other configuration needed!</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6 col-xl-4">
+              <div class="media">
+                <div class="lead-6 line-height-1 text-success w-70px"><i class="icon-chat"></i></div>
+                <div class="media-body">
+                  <h5>Lightweight Companion App Protocol</h5>
+                  <p>The phone uses only a few kb of bandwidth, offloading most of the work to your desktop.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
 
         </div>
       </section>
@@ -177,84 +200,27 @@
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
       <a name="download"></a>
-      <section class="section text-white overflow-hidden" style="background-image: linear-gradient(135deg, #6f86d6 0%, #48c6ef 100%);">
-        <canvas class="constellation" data-radius="0"></canvas>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 align-self-center text-center text-md-left mb-7 mb-md-0">
-              <h2>Download</h2>
-              <p class="lead">Download Zecwallet Lite for <span id="os_name"></span>.</p>
-
-              <div class="gap-xy-2 mt-7" id="platform_download">
-                  <a id="default_download" class="btn btn-lg btn-round btn-white" href="https://github.com/adityapk00/zecwallet-lite/releases"><i class="fa lead-1 mr-2"></i>Download From GitHub</a>
+      <section class="section overflow-hidden bg-dark text-white">
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-md-6 text-center">
+                <img src="assets/img/app.png" alt="..." data-aos="slide-up">
               </div>
-            </div>
-
-            <div class="col-md-6 text-center">
-              <div class="accordion" id="accordion-1">
-                <div class="card">
-                  <h5 class="card-title">
-                    <a class="collapsed text-dark" data-toggle="collapse" href="#collapse-1-1">More Platforms And Binaries</a>
-                  </h5>
-
-                  <div id="collapse-1-1" class="collapse" data-parent="#accordion-1">
-                    <div class="card-body">
-                      <table class="table text-white">
-                        <thead>
-                          <tbody id="moreplatforms">
-                          </tbody>
-                        </thead>
-                      </table>
-                    </div>
-                  </div>
+  
+              <div class="col-md-6 align-self-center">
+                <h2>Now Available!</h2>
+                <p>Get started on your Android Phone by scanning the connection QR Code from your desktop Zecwallet.</p>
+  
+                <div class="gap-xy-2 my-6">
+                  <a href="#"><img src="assets/img/badge-google.png" alt="download on google play"></a>
                 </div>
+  
               </div>
+  
             </div>
-
           </div>
-        </div>
-
-        <script type="text/javascript">
-          $( () => {
-            $("#os_name").append(`${navigator.platform.split(" ")[0]}`);
-
-            $.get("https://api.github.com/repos/adityapk00/zecwallet-lite/releases", (data) => {
-              $("#default_download").hide();
-
-              for (let asset of data[0].assets) {
-                $("#moreplatforms").append(`<tr><td><a class="text-dark" href="${asset.browser_download_url}">${asset.name}</a></td></tr>`);
-
-                // Windows
-                if (navigator.platform.indexOf("Win") > -1) {
-                  if (asset.name.toLowerCase().startsWith("windows-binaries")) {
-                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Windows Binaries</a>`)
-                  }
-                  if (asset.name.toLowerCase().startsWith("windows-installer")) {
-                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Windows (.MSI)</a>`)
-                  }
-                }
-
-                // Linux
-                if (navigator.platform.indexOf("Linux") > -1) {
-                  if (asset.name.toLowerCase().startsWith("linux-binaries")) {
-                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Linux Binaries</a>`)
-                  }
-                  if (asset.name.toLowerCase().startsWith("linux-deb")) {
-                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Linux (.DEB)</a>`)
-                  }
-                }
-
-                // MacOS
-                if (navigator.platform.indexOf("Mac") > -1) {
-                  if (asset.name.toLowerCase().startsWith("macos")) {
-                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>MacOS (.DMG)</a>`)
-                  }
-                }
-              }
-            });
-          });
-        </script>
-      </section>
+        </section>
 
     </main>
 
@@ -304,12 +270,12 @@
           </div>
 
           <div class="col-md-6">
-            <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="https://play.google.com/store/apps/details?id=com.adityapk.zcash.zqwandroid">
+            <a class="card p-5 shadow-3 hover-shadow-6 text-default" href="/index.html">
               <div style="display: block">
-                  <p style="float: left; padding-right: 20px;"><i class="fa icon-phone lead-7 text-danger"></i></p>
-                <h5 class="fw-500 my-4">Companion App for Android</h5>
+                  <p style="float: left; padding-right: 20px;"><i class="fa icon-laptop lead-7 text-danger"></i></p>
+                <h5 class="fw-500 my-4">Zecwallet Lite</h5>
               </div>
-              <p class="mb-0">Connect to your Zecwallet Lite or Fullnode from your Android phone, and securely send shielded and transparent transactions from your phone.</p>
+              <p class="mb-0">Zecwallet Lite is a fully featured shielded wallet for Zcash that runs on MacOS, Windows or Linux. Syncs in under a minute. No blockchain download needed!</p>
             </a>
           </div>
 
@@ -328,11 +294,11 @@
         <div class="container">
           <div class="row gap-y align-items-center">
             <div class="col-md-9">
-              <h4 class="mb-0 text-white text-center text-md-left">Zecwallet Lite is an open source project with a permissive MIT license and is supported by a grant from the Zcash Foundation.</h4>
+              <h4 class="mb-0 text-white text-center text-md-left">Zecwallet Android Companion App is an open source project with a permissive MIT license and is supported by a grant from the Zcash Foundation.</h4>
             </div>
   
             <div class="col-md-3 text-center text-md-right">
-              <a class="btn btn-lg btn-round btn-light" href="https://github.com/adityapk00/zecwallet-lite">View On GitHub</a>
+              <a class="btn btn-lg btn-round btn-light" href="https://github.com/adityapk00/zqwandroid">View On GitHub</a>
             </div>
           </div>
         </div>
@@ -400,7 +366,7 @@
         <div class="row gap-y align-items-center">
 
           <div class="col-6 col-lg-3">
-            <a href="index.html"><img src="assets/img/favicon.png" style="width: 32px;" alt="logo"></a>
+            <a href="index.html"><img src="assets/img/favicon-fullnode.png" style="width: 32px;" alt="logo"></a>
           </div>
 
           <div class="col-6 col-lg-3 text-right order-lg-last">
