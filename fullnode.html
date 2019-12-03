@@ -203,7 +203,7 @@
           <div class="row">
             <div class="col-md-6 align-self-center text-center text-md-left mb-7 mb-md-0">
               <h2>Download</h2>
-              <p class="lead">Download Zecwallet Full Node for <span id="os_name"></span>.</p>
+              <p class="lead">Download Zecwallet Full Node <span id="os_name"></span>.</p>
 
               <div class="gap-xy-2 mt-7" id="platform_download">
                   <a id="default_download" class="btn btn-lg btn-round btn-white" href="https://github.com/zcashfoundation/zecwallet/releases"><i class="fa lead-1 mr-2"></i>Download From GitHub</a>
@@ -236,7 +236,7 @@
 
         <script type="text/javascript">
           $( () => {
-            $("#os_name").append(`${navigator.platform.split(" ")[0]}`);
+            $("#os_name").append(`for ${navigator.platform.split(" ")[0]}`);
 
             $.get("https://api.github.com/repos/zcashfoundation/zecwallet/releases", (data) => {
               $("#default_download").hide();
