@@ -291,7 +291,11 @@
 
         <script type="text/javascript">
           $( () => {
-            $("#os_name").append(`for ${navigator.platform.split(" ")[0]}`);
+            let platform_name = navigator.platform.split(" ")[0];
+            if (platform_name == "MacIntel") {
+              platform_name = "MacOS";
+            }
+            $("#os_name").append(`for ${platform_name}`);
 
             $.get("https://api.github.com/repos/adityapk00/zecpaperwallet/releases", (data) => {
               $("#default_download").hide();
