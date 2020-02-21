@@ -252,27 +252,27 @@
 
                 // Windows
                 if (navigator.platform.indexOf("Win") > -1) {
-                  if (asset.name.toLowerCase().startsWith("windows-binaries")) {
+                  if (asset.name.toLowerCase().endsWith("zip")) {
                     $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Windows Binaries</a>`)
                   }
-                  if (asset.name.toLowerCase().startsWith("windows-installer")) {
+                  if (asset.name.toLowerCase().endsWith("msi")) {
                     $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Windows (.MSI)</a>`)
                   }
                 }
 
                 // Linux
                 if (navigator.platform.indexOf("Linux") > -1) {
-                  if (asset.name.toLowerCase().startsWith("linux-binaries")) {
-                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Linux Binaries</a>`)
+                  if (asset.name.toLowerCase().endsWith("appimage")) {
+                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Linux AppImage</a>`)
                   }
-                  if (asset.name.toLowerCase().startsWith("linux-deb")) {
+                  if (asset.name.toLowerCase().endsWith("deb")) {
                     $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Linux (.DEB)</a>`)
                   }
                 }
 
                 // MacOS
                 if (navigator.platform.indexOf("Mac") > -1) {
-                  if (asset.name.toLowerCase().startsWith("macos")) {
+                  if (asset.name.toLowerCase().endsWith("dmg")) {
                     $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>MacOS (.DMG)</a>`)
                   }
                 }
