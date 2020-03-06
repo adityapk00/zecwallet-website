@@ -116,7 +116,7 @@
               <ul class="nav nav-tabs-shadow nav-tabs-border">
                 <li class="nav-item">
                   <a class="nav-link active" data-toggle="tab" href="#tab-1">
-                    <h6>Shileded and Transparent addresses</h6>
+                    <h6>Shielded and Transparent addresses</h6>
                     <p class="small mb-0">Full support for incoming and outgoing, z-addresses and t-addresses.</p>
                   </a>
                 </li>
@@ -217,7 +217,11 @@
 
         <script type="text/javascript">
           $( () => {
-            $("#os_name").append(`for ${navigator.platform.split(" ")[0]}`);
+            let platform_name = navigator.platform.split(" ")[0];
+            if (platform_name == "MacIntel") {
+              platform_name = "MacOS";
+            }
+            $("#os_name").append(`for ${platform_name}`);
 
             $.get("https://api.github.com/repos/adityapk00/zecwallet-lite/releases", (data) => {
               $("#default_download").hide();
