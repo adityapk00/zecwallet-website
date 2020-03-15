@@ -231,7 +231,7 @@
 
                 // Windows
                 if (navigator.platform.indexOf("Win") > -1) {
-                  if (asset.name.toLowerCase().endsWith("zip")) {
+                  if (asset.name.toLowerCase().endsWith("win.zip")) {
                     $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Windows Binaries</a>`)
                   }
                   if (asset.name.toLowerCase().endsWith("msi")) {
