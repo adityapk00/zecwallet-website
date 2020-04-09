@@ -245,35 +245,38 @@
             $("#os_name").append(`for ${platform_name}`);
 
             $.get("https://api.github.com/repos/zcashfoundation/zecwallet/releases", (data) => {
-              $("#default_download").hide();
-
               for (let asset of data[0].assets) {
                 $("#moreplatforms").append(`<tr><td><a class="text-dark" href="${asset.browser_download_url}">${asset.name}</a></td></tr>`);
 
                 // Windows
                 if (navigator.platform.indexOf("Win") > -1) {
                   if (asset.name.toLowerCase().endsWith("win.zip")) {
-                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Windows Binaries</a>`)
+                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Windows Binaries</a>`);
+                    $("#default_download").hide();
                   }
                   if (asset.name.toLowerCase().endsWith("msi")) {
-                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Windows (.MSI)</a>`)
+                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Windows (.MSI)</a>`);
+                    $("#default_download").hide();
                   }
                 }
 
                 // Linux
                 if (navigator.platform.indexOf("Linux") > -1) {
                   if (asset.name.toLowerCase().endsWith("appimage")) {
-                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Linux AppImage</a>`)
+                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Linux AppImage</a>`);
+                    $("#default_download").hide();
                   }
                   if (asset.name.toLowerCase().endsWith("deb")) {
-                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Linux (.DEB)</a>`)
+                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>Linux (.DEB)</a>`);
+                    $("#default_download").hide();
                   }
                 }
 
                 // MacOS
                 if (navigator.platform.indexOf("Mac") > -1) {
                   if (asset.name.toLowerCase().endsWith("dmg")) {
-                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>MacOS (.DMG)</a>`)
+                    $("#platform_download").append(`<a class="btn btn-lg btn-round btn-white" href="${asset.browser_download_url}"><i class="fa lead-1 mr-2"></i>MacOS (.DMG)</a>`);
+                    $("#default_download").hide();
                   }
                 }
               }
